@@ -1,0 +1,398 @@
+﻿<!doctype html>
+
+
+<html lang="en" class="no-js">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121816088-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121816088-1');
+</script>
+	<title>Idyllic Tech - SQLServer Integration Services (SSIS)</title>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="css/latofonts.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/fa.css" media="screen">
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">	
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/animate.css" media="screen">
+    <!-- REVOLUTION BANNER CSS SETTINGS -->
+	<link rel="stylesheet" type="text/css" href="css/settings.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.migrate.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+</head>
+<body>
+
+	<!-- Container -->
+	<div id="container">
+		<!-- Header================================================== -->
+		<header class="clearfix">
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+                        <a class="navbar-brand mybrand" href="index.html"><img src="images/logo.png" /><strong><span>I</span>dyllic Tech</strong></a>
+					</div>
+					<!-- Collect the nav links toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right navigate-section">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="megadrop"><a href="#">Business Model</a>
+              <div class="megadrop-down">
+                <div class="dropdown">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h2>Business Models - We Follow </h2>
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <ul>
+                            <li><a href="offshore_managed.html">
+                              <h4>Offshore Managed Delivery</h4>
+                              </a></li>
+                            <li><a href="fixed_price.html">
+                              <h4>Fixed Price Approach</h4>
+                              </a></li>
+                          </ul>
+                        </div>
+                        <div class="col-sm-4">
+                          <ul>
+                            <li><a href="dual_shore.html">
+                              <h4>Dual Shore Delivery</h4>
+                              </a></li>
+                          </ul>
+                        </div>
+                        <div class="col-sm-4">
+                          <ul>
+                            <li><a href="offshore.html">
+                              <h4>Offshore Software Development Outsourcing</h4>
+                              </a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="megadrop active"><a href="#">Services</a>
+              <div class="megadrop-down">
+                <div class="dropdown">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <h2>Services - We Offered</h2>
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <ul>
+                            <li>
+                              <h4>Web Application Development</h4>
+                            </li>
+                            <li class="sub_cat "><a href="asp_net.html">ASP .Net MVC</a></li>
+                            <li class="sub_cat "><a href="angular_js.html">Angular Js Development</a></li>
+                            <li class="sub_cat"><a href="application_programming_interface.html">Application Programming Interface</a></li>
+                            
+                            <li class="sub_cat"><a href="sharepoint_development.html">SharePoint Development</a></li>
+                            <li class="sub_cat"><a href="software_product_development.html">Software Product Development</a></li>
+                            <li class="sub_cat"><a href="erp.html">ERP Software Development</a></li>
+                            
+                            <li>
+                              <h4>Web Deployment </h4>
+                            </li>
+                            <li class="sub_cat"><a href="azure_development.html">Azure Deployment </a></li>
+                            <li class="sub_cat"><a href="aws_development.html">AWS Deployment </a></li>
+                            
+                          </ul>
+                        </div>
+                        <div class="col-sm-4">
+                          <ul>
+                            <li>
+                              <h4>Reporting &amp; Database Management</h4>
+                            </li>
+                            <li>
+                              <h4>Tableau</h4>
+                            </li>
+                            <li class="sub_cat"><a href="tabula_bi_data_analytics.html">Tableau BI and Data Analytics </a></li>
+                            <li class="sub_cat"><a href="tabula_bi_development_design.html">Tableau Development, Design and Data Visualization </a></li>
+                            <li class="sub_cat"><a href="tabula_bi_integration.html">Tableau Integration with Platform and Tableau WebAPI </a></li>
+                            
+                            <li>
+                              <h4>Power BI</h4>
+                            </li>
+                            <li class="sub_cat"><a href="power_bi_data_analytics.html">Power BI and Data Analytics </a></li>
+                            <li class="sub_cat"><a href="power_bi_development_design.html">Power BI Development, Design and Data Visualization </a></li>
+                            <li class="sub_cat"><a href="power_bi_integration.html">Power BI Integration with Platform </a></li>
+                           
+                          </ul>
+                        </div>
+                        <div class="col-sm-4">
+                          <ul>
+                          <li>
+                              <h4>&nbsp;</h4>
+                            </li>
+                             
+                          <li>
+                          <h4>Database Management </h4>
+                            </li>
+                            <li class="sub_cat"><a href="query_optimization.html">Query optimization </a></li>
+                            <li class="sub_cat"><a href="performance_tuning.html">Performance Tuning </a></li>
+                            <li class="sub_cat"><a href="migration.html">Migration </a></li>
+                            <li class="sub_cat"><a href="maintenance.html">Maintenance </a></li>
+                           <li>
+                            <h4>Microsoft BI</h4>
+                            </li>
+                            <li class="sub_cat"><a href="ssrs.html">SSRS (Sqlserver reporting services)</a></li>
+                            <li class="sub_cat active"><a href="ssis.html">SSIS (Sqlserver Integration services)</a></li> 
+                            
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="megadrop"><a href="#">Technologies</a>
+              <div class="megadrop-down">
+                <div class="dropdown">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h2>Technologies - We Worked </h2>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <ul>
+                            
+                            <li><a href="microsoft.html"><h4>Microsoft</h4></a></li>
+                          </ul>
+                        </div>
+                        <div class="col-sm-5">
+                          <ul>
+                            <li><a href="business_intelligence.html"><h4>Business intelligence &amp; Visualization</h4></a></li>	
+                          </ul>
+                        </div>
+                        <div class="col-sm-4">
+                          <ul>
+                            <li><a href="database.html"><h4>Database</h4></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+            <li><a href="contact.html">Contact US</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+		</header>
+		<!-- End Header -->
+
+        <div id="content">
+
+            <!-- page-banner-section
+            ================================================== -->
+            <section class="page-banner-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>SQLServer Integration Services (SSIS)</h2>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="page-pagin">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="#!">Services</a></li>
+                                <li><a href="#!">SSIS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End page-banner section -->
+            <section id="other-section">
+                <div class="container">
+                    
+                       <div class="title-section ">
+                       		<h1>SQLServer Integration Services (SSIS)</h1>
+                            <span></span>
+                       </div>
+                       <div class="content-section">
+                        <p>The ability to extract data from various sources and transforming it into meaningful information is essential to ensure competitiveness. Helping IT departments to analyse accurate data is critical to the decision making within an enterprise.</p>
+                        
+                     <p>Our highly experienced BI (Business Intelligence) Development team has the necessary experience, skills and expertise to offer a solution as per requirements and challenges.</p>
+                     <div class="row">
+                     	<div class="col-xs-12 text-center">
+                        	<img src="images/ssis_banner.jpg" alt="" title="">
+                        </div>
+                     </div>
+                     
+                     <h4>Our Competencies</h4>
+                     <p>We provide a range of services for SQL Server Integration Services (SSIS) with the support of our highly experienced Business Intelligence Architects.</p>
+                     <p>Some of the services provided by us from our engineering centers in India are given below:</p>
+                     <ul>
+                     	<li>Complete Requirement Gathering and Planning</li>
+                        <li>Rich exposure in working with large volumes of non-structured data (web logs, blog posts, documents, web site content etc.)</li>
+                        <li>Datawarehouse loading services</li>
+                        <li>As an offshore SSIS development company, we can capture real-time data from sensors and other industrial gadgets, analyze the data streams in-memory and gain insights on-the-fly (experienced in working with Microsoft StreamInsight)</li>
+                        <li>Extract data from Microsoft and non-Microsoft data sources including SQL Server, Oracle, Teradata, text and XML/CSV files, ODBC and OLE DB sources</li>
+                        <li>Integrate ETL packages with on-premise file systems, FTP sites and cloud storages</li>
+                        <li>Extract data from workflow engines like BizTalk, K2 BlackPearl, and Windows Workflow Foundation etc.</li>
+                        <li>Data and Text Mining</li>
+                        <li>Maintenance and support Service</li>
+                        <li>Data transfer services</li>
+                        <li>Experienced in Vast data normalization and cleansing standardization</li>
+                        <li>Highly knowledgeable in loading transformed data into relational databases and dimensional data warehouses.</li>
+                        
+                     </ul>
+					</div>
+                </div>
+            </section>
+
+        </div>
+
+		<!-- footer ================================================== -->
+        <footer>
+            <div class="container">
+                <div class="footer-widgets">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="widgets">
+                                <h1><a class="navbar-brand" href="index.html"><img src="images/logo.png" /><strong><span>I</span>dyllic Tech</strong></a></h1><br />
+                                <p>
+                                    We are an innovative, experienced and positive team of experts with the best concentration to provide Software Consultancy for individuals, small and medium sized businesses, and corporate clients, to enrich our clients presence globally. 
+                                </p>
+                                <ul class="social-list">
+                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="widgets">
+                                <h2>Tags</h2>
+                                <ul class="tag-list">
+                                    <li><a href="asp_net.html">ASP .NET </a></li>
+                                  <li><a href="database.html">Database </a></li>
+                                    <li><a href="erp.html">ERP </a></li>
+                                    <li><a href="ssrs.html">SSRS</a></li>
+                                    <li><a href="ssis.html">SSIS</a></li>
+                                    <li><a href="power_bi_data_analytics">Power BI</a></li>
+                                    <li><a href="tabula_bi_data_analytics.html">Tableau BI</a></li>
+                                     <li><a href="angular_js.html">Angular Js </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <p class="copyright">
+                    © Copyright 2018. Idyllic Tech. All rights reserved.
+                </p>
+            </div>
+        </footer>
+		<!-- End footer -->
+
+	</div>
+	<!-- End Container -->
+
+	<!-- Revolution slider -->
+	<script type="text/javascript">
+
+		jQuery(document).ready(function() {
+						
+			jQuery('.tp-banner').show().revolution(
+			{
+				dottedOverlay:"none",
+				delay:10000,
+				startwidth:960,
+				startheight:740,
+				hideThumbs:200,
+				
+				thumbWidth:100,
+				thumbHeight:50,
+				thumbAmount:5,
+				
+				navigationType:"bullet",
+				navigationArrows:"none",
+				
+				touchenabled:"on",
+				onHoverStop:"off",
+				
+				swipe_velocity: 0.7,
+				swipe_min_touches: 1,
+				swipe_max_touches: 1,
+				drag_block_vertical: false,
+										
+										parallax:"mouse",
+				parallaxBgFreeze:"on",
+				parallaxLevels:[7,4,3,2,5,4,3,2,1,0],
+										
+				keyboardNavigation:"off",
+				
+				navigationHAlign:"center",
+				navigationVAlign:"bottom",
+				navigationHOffset:0,
+				navigationVOffset:60,
+						
+				shadow:0,
+
+				spinner:"spinner4",
+				
+				stopLoop:"off",
+				stopAfterLoops:-1,
+				stopAtSlide:-1,
+
+				shuffle:"off",
+				
+				autoHeight:"off",						
+				forceFullWidth:"off",						
+										
+										
+										
+				hideThumbsOnMobile:"off",
+				hideNavDelayOnMobile:1500,						
+				hideBulletsOnMobile:"off",
+				hideArrowsOnMobile:"off",
+				hideThumbsUnderResolution:0,
+				
+				hideSliderAtLimit:0,
+				hideCaptionAtLimit:0,
+				hideAllCaptionAtLilmit:0,
+				startWithSlide:0,
+				fullScreenOffsetContainer: ".header"	
+			});
+							
+		});	//ready
+
+		
+		
+	</script>
+</body>
+</html>
