@@ -23,8 +23,8 @@
 
 	<link rel="stylesheet" type="text/css" href="css/latofonts.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="css/fa.css" media="screen">
-	
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">	
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="css/animate.css" media="screen">
@@ -114,17 +114,17 @@
                             <li class="sub_cat "><a href="asp_net.html">ASP .Net MVC</a></li>
                             <li class="sub_cat"><a href="angular_js.html">Angular Js Development</a></li>
                             <li class="sub_cat"><a href="application_programming_interface.html">Application Programming Interface</a></li>
-                            
+
                             <li class="sub_cat"><a href="sharepoint_development.html">SharePoint Development</a></li>
                             <li class="sub_cat"><a href="software_product_development.html">Software Product Development</a></li>
                             <li class="sub_cat"><a href="erp.html">ERP Software Development</a></li>
-                            
+
                             <li>
                               <h4>Web Deployment </h4>
                             </li>
                             <li class="sub_cat"><a href="azure_development.html">Azure Deployment </a></li>
                             <li class="sub_cat"><a href="aws_development.html">AWS Deployment </a></li>
-                            
+
                           </ul>
                         </div>
                         <div class="col-sm-4">
@@ -138,14 +138,14 @@
                             <li class="sub_cat"><a href="tabula_bi_data_analytics.html">Tableau BI and Data Analytics </a></li>
                             <li class="sub_cat"><a href="tabula_bi_development_design.html">Tableau Development, Design and Data Visualization </a></li>
                             <li class="sub_cat"><a href="tabula_bi_integration.html">Tableau Integration with Platform and Tableau WebAPI </a></li>
-                            
+
                             <li>
                               <h4>Power BI</h4>
                             </li>
                             <li class="sub_cat"><a href="power_bi_data_analytics.html">Power BI and Data Analytics </a></li>
                             <li class="sub_cat"><a href="power_bi_development_design.html">Power BI Development, Design and Data Visualization </a></li>
                             <li class="sub_cat"><a href="power_bi_integration.html">Power BI Integration with Platform </a></li>
-                           
+
                           </ul>
                         </div>
                         <div class="col-sm-4">
@@ -153,7 +153,7 @@
                           <li>
                               <h4>&nbsp;</h4>
                             </li>
-                             
+
                           <li>
                           <h4>Database Management </h4>
                             </li>
@@ -165,8 +165,8 @@
                             <h4>Microsoft BI</h4>
                             </li>
                             <li class="sub_cat"><a href="ssrs.html">SSRS (Sqlserver reporting services)</a></li>
-                            <li class="sub_cat"><a href="ssis.html">SSIS (Sqlserver Integration services)</a></li> 
-                            
+                            <li class="sub_cat"><a href="ssis.html">SSIS (Sqlserver Integration services)</a></li>
+
                           </ul>
                         </div>
                       </div>
@@ -184,13 +184,13 @@
                       <div class="row">
                         <div class="col-sm-3">
                           <ul>
-                            
+
                             <li><a href="microsoft.html"><h4>Microsoft</h4></a></li>
                           </ul>
                         </div>
                         <div class="col-sm-5">
                           <ul>
-                            <li><a href="business_intelligence.html"><h4>Business intelligence &amp; Visualization</h4></a></li>	
+                            <li><a href="business_intelligence.html"><h4>Business intelligence &amp; Visualization</h4></a></li>
                           </ul>
                         </div>
                         <div class="col-sm-4">
@@ -204,7 +204,7 @@
                 </div>
               </div>
             </li>
-            
+              <li><a href="performance-metrics.html">Performance</a></li>
             <li><a href="contact.html">Contact US</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
@@ -236,7 +236,7 @@
             <!-- End page-banner section -->
             <section id="other-section">
                 <div class="container">
-                    
+
                        <div class="title-section ">
                        		<h1>Query optimization</h1>
                             <span></span>
@@ -247,16 +247,16 @@
                           	<li>Optimizing queries</li>
                             <li>Identifying queries to tune</li>
                         </ul>
-                        
+
                         <p  class="top_margin_30">When optimizing your database server, you need to tune the performance of individual queries. This is as important as—perhaps even more important than—tuning other aspects of your server installation, that affect performance, such as hardware and software configurations.</p>
-                        
+
                         <p>Even if your database server runs on the most powerful hardware available, its performance can be negatively affected by a handful of misbehaving queries. In fact, even one bad query, sometimes called a "runaway query," can cause serious performance issues for your database.</p>
 
-						<p>Conversely, the overall performance of your database can be greatly improved by tuning a set of most expensive or most often executed queries. In this article, I will look at some of the techniques you can employ to identify and tune the most expensive and worst performing queries on your server.</p>  
-                        
+						<p>Conversely, the overall performance of your database can be greatly improved by tuning a set of most expensive or most often executed queries. In this article, I will look at some of the techniques you can employ to identify and tune the most expensive and worst performing queries on your server.</p>
+
                         <h4>Analyzing Execution Plans</h4>
                      <p>When tuning an individual query, you usually start by looking at the execution plan of that query. The execution plan describes the sequence of operations, physical and logical, that SQL ServerTM will perform in order to fulfill the query and produce the desired resultset. The execution plan is produced by a database engine component called Query Optimizer during the optimization phase of query processing—this takes into account many different factors, such as the search predicates used in the query, the tables involved and their join conditions, the list of columns returned, and the presence of useful indexes that can serve as efficient access paths to the data.</p>
-                     
+
                      <p>For complex queries, the number of all possible permutations can be huge, so the query optimizer does not evaluate all possibilities but instead tries to find a plan that is "good enough" for a given query. This is because finding a perfect plan may not always be possible; and even when it is possible, the cost of evaluating all the possibilities to find the perfect plan could easily outweigh any performance gains. From a DBA point of view, it is important to understand the process and its limitations.
 There are a number of ways to retrieve an execution plan for a query:</p>
 
@@ -265,9 +265,9 @@ There are a number of ways to retrieve an execution plan for a query:</p>
                         <li>Various SET options, such as SHOWPLAN_XML and SHOWPLAN_ALL, return the execution plan as either an XML document describing the plan using a special schema or a rowset with textual description of each of the operations in the execution plan.</li>
                         <li>SQL Server Profiler event classes, such as Showplan XML, allow you to gather execution plans of statements collected by a trace.</li>
                     </ul>
-                     
+
                      <p class="top_margin_30">While an XML representation of the execution plan may not be the easiest format for a human to read, this option does allow you to write procedures and utilities that can analyze your execution plans, looking for signs of performance problems and suboptimal plans. An XML-based representation can also be saved to a file with the .sqlplan extension and then opened in the Management Studio to produce a graphical representation. These files can also be saved for later analysis, eliminating, of course, the need to reproduce the execution plan each time you want to analyze it. This is especially useful when you want to compare your plans to see how they change over time.</p>
-                     
+
 					</div>
                 </div>
             </section>
@@ -283,7 +283,7 @@ There are a number of ways to retrieve an execution plan for a query:</p>
                             <div class="widgets">
                                 <h1><a class="navbar-brand" href="index.html"><img src="images/logo.png" /><strong><span>I</span>dyllic Tech</strong></a></h1><br />
                                 <p>
-                                    We are an innovative, experienced and positive team of experts with the best concentration to provide Software Consultancy for individuals, small and medium sized businesses, and corporate clients, to enrich our clients presence globally. 
+                                    We are an innovative, experienced and positive team of experts with the best concentration to provide Software Consultancy for individuals, small and medium sized businesses, and corporate clients, to enrich our clients presence globally.
                                 </p>
                                 <ul class="social-list">
                                     <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
@@ -307,7 +307,7 @@ There are a number of ways to retrieve an execution plan for a query:</p>
                                 </ul>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
 
@@ -325,7 +325,7 @@ There are a number of ways to retrieve an execution plan for a query:</p>
 	<script type="text/javascript">
 
 		jQuery(document).ready(function() {
-						
+
 			jQuery('.tp-banner').show().revolution(
 			{
 				dottedOverlay:"none",
@@ -333,65 +333,65 @@ There are a number of ways to retrieve an execution plan for a query:</p>
 				startwidth:960,
 				startheight:740,
 				hideThumbs:200,
-				
+
 				thumbWidth:100,
 				thumbHeight:50,
 				thumbAmount:5,
-				
+
 				navigationType:"bullet",
 				navigationArrows:"none",
-				
+
 				touchenabled:"on",
 				onHoverStop:"off",
-				
+
 				swipe_velocity: 0.7,
 				swipe_min_touches: 1,
 				swipe_max_touches: 1,
 				drag_block_vertical: false,
-										
+
 										parallax:"mouse",
 				parallaxBgFreeze:"on",
 				parallaxLevels:[7,4,3,2,5,4,3,2,1,0],
-										
+
 				keyboardNavigation:"off",
-				
+
 				navigationHAlign:"center",
 				navigationVAlign:"bottom",
 				navigationHOffset:0,
 				navigationVOffset:60,
-						
+
 				shadow:0,
 
 				spinner:"spinner4",
-				
+
 				stopLoop:"off",
 				stopAfterLoops:-1,
 				stopAtSlide:-1,
 
 				shuffle:"off",
-				
-				autoHeight:"off",						
-				forceFullWidth:"off",						
-										
-										
-										
+
+				autoHeight:"off",
+				forceFullWidth:"off",
+
+
+
 				hideThumbsOnMobile:"off",
-				hideNavDelayOnMobile:1500,						
+				hideNavDelayOnMobile:1500,
 				hideBulletsOnMobile:"off",
 				hideArrowsOnMobile:"off",
 				hideThumbsUnderResolution:0,
-				
+
 				hideSliderAtLimit:0,
 				hideCaptionAtLimit:0,
 				hideAllCaptionAtLilmit:0,
 				startWithSlide:0,
-				fullScreenOffsetContainer: ".header"	
+				fullScreenOffsetContainer: ".header"
 			});
-							
+
 		});	//ready
 
-		
-		
+
+
 	</script>
 </body>
 </html>
